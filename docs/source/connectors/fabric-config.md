@@ -79,8 +79,10 @@ peers:
 
 ## Runtime settings
 
-### Common settings
-Some runtime properties of the adapter can be set through Caliper’s [runtime configuration mechanism](../concepts/runtime-config.md). For the available settings, see the `caliper.fabric` section of the [default configuration file](https://github.com/hyperledger-caliper/caliper/blob/v0.6.0/packages/caliper-core/lib/common/config/default.yaml) and its embedded documentation.
+Caliper has it's on configuration file and contains configuration options which have an effect on the fabric adapter.
+These runtime properties can be set through Caliper’s [runtime configuration mechanism](../concepts/runtime-config.md). Note that this caliper runtime configuration file is a different file to the network configuration file discussed later.
+
+For the available settings, see the `caliper.fabric` section of the [default configuration file](https://github.com/hyperledger-caliper/caliper/blob/v0.6.0/packages/caliper-core/lib/common/config/default.yaml) and its embedded documentation.
 
 The above settings are processed when starting Caliper. Modifying them during testing will have no effect. However, you can override the default values *before Caliper* starts from the usual configuration sources. In the following example the `localhost` property applies only when binding with Fabric 2.2.
 

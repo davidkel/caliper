@@ -325,9 +325,9 @@ A default/fallback configuration file is shipped with the Caliper-related packag
 
 The following table shows available options and the version of the Fabric binding that supports it.
 
-| Key                                      | SUT Version | Description                                                                                                       |
+| Key                                      | SUT bind Version | Description                                                                                                       |
 |------------------------------------------|-------------|-------------------------------------------------------------------------------------------------------------------|
-| caliper-fabric-timeout-invokeorquery     | All         | The default timeout in seconds to use for invoking or querying transactions. Default is 60 seconds.               |
+| caliper-fabric-timeout-invokeorquery     | 2.2, gateway| The default timeout in seconds to use for invoking or querying transactions. Default is 60 seconds.               |
 | caliper-fabric-gateway-localhost         | 2.2         | Indicates whether to convert discovered endpoints to localhost. Does not apply if discover is set to false in network config. Default is true. |
 | caliper-fabric-gateway-querystrategy     | 2.2         | Sets the query strategy to use for 2.2 when gateway is enabled. Default is Round Robin.                           |
 | caliper-fabric-gateway-eventstrategy     | 2.2         | Sets the event strategy to use for 2.2 when gateway is enabled. Default is any in Invoker Organisation.           |
